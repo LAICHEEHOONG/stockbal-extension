@@ -3,13 +3,13 @@
 /************pcd05 *********************/
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCTFR5KDkREMUwVakho8W-ZlG2oQMlEWQo",
-  authDomain: "starting-c9365.firebaseapp.com",
-  projectId: "starting-c9365",
-  storageBucket: "starting-c9365.appspot.com",
-  messagingSenderId: "695864180075",
-  appId: "1:695864180075:web:b6cebe59b69d5eae10202e",
-  measurementId: "G-TKBE7V3DYF"
+  apiKey: "secret",
+  authDomain: "secret",
+  projectId: "secret",
+  storageBucket: "secretm",
+  messagingSenderId: "secret",
+  appId: "secret",
+  measurementId: "secret"
 };
 
 
