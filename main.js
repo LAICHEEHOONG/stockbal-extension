@@ -308,17 +308,17 @@ function tbodyDataToObj(tbody, obj) {
   ////tbody tr td:nth-child(2)
   tbody.querySelectorAll('.webstore').forEach(tag => (obj.ean.push(tag.innerHTML)));
   tbody.querySelectorAll('tbody tr td:nth-child(2)').forEach(tag => obj.name.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(7)').forEach(tag => obj.price.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(8)').forEach(tag => obj.qty.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(9)').forEach(tag => obj.git.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(10)').forEach(tag => obj.p00.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(11)').forEach(tag => obj.p03.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(12)').forEach(tag => obj.p05.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(13)').forEach(tag => obj.p06.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(14)').forEach(tag => obj.phq.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(15)').forEach(tag => obj.ppj.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(16)').forEach(tag => obj.ws1.push(tag.innerHTML));
-  tbody.querySelectorAll('tbody tr td:nth-child(17)').forEach(tag => obj.wxr.push(tag.innerHTML));
+  tbody.querySelectorAll('tbody tr td:nth-child(8)').forEach(tag => obj.price.push(tag.innerHTML));//ori 7
+  tbody.querySelectorAll('tbody tr td:nth-child(9)').forEach(tag => obj.qty.push(tag.innerHTML));// ...8
+  tbody.querySelectorAll('tbody tr td:nth-child(10)').forEach(tag => obj.git.push(tag.innerHTML));// ...9
+  tbody.querySelectorAll('tbody tr td:nth-child(11)').forEach(tag => obj.p00.push(tag.innerHTML));// ...10
+  tbody.querySelectorAll('tbody tr td:nth-child(12)').forEach(tag => obj.p03.push(tag.innerHTML));// ..11
+  tbody.querySelectorAll('tbody tr td:nth-child(13)').forEach(tag => obj.p05.push(tag.innerHTML));// ..12
+  tbody.querySelectorAll('tbody tr td:nth-child(14)').forEach(tag => obj.p06.push(tag.innerHTML));// ..13
+  tbody.querySelectorAll('tbody tr td:nth-child(15)').forEach(tag => obj.phq.push(tag.innerHTML));// ..14
+  tbody.querySelectorAll('tbody tr td:nth-child(16)').forEach(tag => obj.ppj.push(tag.innerHTML));// ..15
+  tbody.querySelectorAll('tbody tr td:nth-child(17)').forEach(tag => obj.ws1.push(tag.innerHTML));// ..16
+  tbody.querySelectorAll('tbody tr td:nth-child(18)').forEach(tag => obj.wxr.push(tag.innerHTML));// ..17
 
 
 }
@@ -442,7 +442,7 @@ async function fetchData(inputdata) {
     const htmlDocument = parser.parseFromString(html, "text/html");
     const tbody = htmlDocument.querySelector('tbody');
 
-    checkOriginalPageAbnormal(htmlDocument);
+    // checkOriginalPageAbnormal(htmlDocument);
 
     tbodyDataToObj(tbody, allData);
 
