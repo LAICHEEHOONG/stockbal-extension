@@ -10,7 +10,7 @@ function jsbarcodeLink() {
 
 jsbarcodeLink();
 
-console.log('stock status extension 6.8, price tag function upgrade qr code');
+console.log('stock status extension 6.9, fix bug add image');
 
 
 
